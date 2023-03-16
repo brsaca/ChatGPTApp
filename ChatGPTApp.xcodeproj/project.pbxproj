@@ -21,6 +21,8 @@
 		23F7A0B029C3A5E800E3DC52 /* macOS_ChatGPTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F7A0AF29C3A5E800E3DC52 /* macOS_ChatGPTTests.swift */; };
 		23F7A0BA29C3A5E900E3DC52 /* macOS_ChatGPTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F7A0B929C3A5E900E3DC52 /* macOS_ChatGPTUITests.swift */; };
 		23F7A0BC29C3A5E900E3DC52 /* macOS_ChatGPTUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F7A0BB29C3A5E900E3DC52 /* macOS_ChatGPTUITestsLaunchTests.swift */; };
+		23F7A0CE29C3A91100E3DC52 /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 23F7A0CD29C3A91100E3DC52 /* OpenAISwift */; };
+		23F7A0D029C3A91900E3DC52 /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 23F7A0CF29C3A91900E3DC52 /* OpenAISwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +78,7 @@
 		23F7A0B529C3A5E800E3DC52 /* macOS-ChatGPTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "macOS-ChatGPTUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23F7A0B929C3A5E900E3DC52 /* macOS_ChatGPTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macOS_ChatGPTUITests.swift; sourceTree = "<group>"; };
 		23F7A0BB29C3A5E900E3DC52 /* macOS_ChatGPTUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macOS_ChatGPTUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		23F7A0CB29C3A8DD00E3DC52 /* OpenAISwift-main */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "OpenAISwift-main"; path = "../OpenAISwift-main"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23F7A0CE29C3A91100E3DC52 /* OpenAISwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23F7A0D029C3A91900E3DC52 /* OpenAISwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,6 +132,8 @@
 		23F7A06129C39D4500E3DC52 = {
 			isa = PBXGroup;
 			children = (
+				23F7A0CA29C3A8DD00E3DC52 /* Packages */,
+				23F7A0C629C3A63200E3DC52 /* Shared */,
 				23F7A06E29C3A56900E3DC52 /* iOS-ChatGPT */,
 				23F7A07F29C3A56F00E3DC52 /* iOS-ChatGPTTests */,
 				23F7A08929C3A56F00E3DC52 /* iOS-ChatGPTUITests */,
@@ -134,6 +141,7 @@
 				23F7A0AE29C3A5E800E3DC52 /* macOS-ChatGPTTests */,
 				23F7A0B829C3A5E900E3DC52 /* macOS-ChatGPTUITests */,
 				23F7A06D29C3A56900E3DC52 /* Products */,
+				23F7A0CC29C3A91100E3DC52 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -223,6 +231,28 @@
 			path = "macOS-ChatGPTUITests";
 			sourceTree = "<group>";
 		};
+		23F7A0C629C3A63200E3DC52 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		23F7A0CA29C3A8DD00E3DC52 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				23F7A0CB29C3A8DD00E3DC52 /* OpenAISwift-main */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		23F7A0CC29C3A91100E3DC52 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -239,6 +269,9 @@
 			dependencies = (
 			);
 			name = "iOS-ChatGPT";
+			packageProductDependencies = (
+				23F7A0CD29C3A91100E3DC52 /* OpenAISwift */,
+			);
 			productName = "iOS-ChatGPT";
 			productReference = 23F7A06C29C3A56900E3DC52 /* iOS-ChatGPT.app */;
 			productType = "com.apple.product-type.application";
@@ -292,6 +325,9 @@
 			dependencies = (
 			);
 			name = "macOS-ChatGPT";
+			packageProductDependencies = (
+				23F7A0CF29C3A91900E3DC52 /* OpenAISwift */,
+			);
 			productName = "macOS-ChatGPT";
 			productReference = 23F7A09B29C3A5E300E3DC52 /* macOS-ChatGPT.app */;
 			productType = "com.apple.product-type.application";
@@ -1461,6 +1497,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		23F7A0CD29C3A91100E3DC52 /* OpenAISwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = OpenAISwift;
+		};
+		23F7A0CF29C3A91900E3DC52 /* OpenAISwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = OpenAISwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 23F7A06229C39D4500E3DC52 /* Project object */;
 }
