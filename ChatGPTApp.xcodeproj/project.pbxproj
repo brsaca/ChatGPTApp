@@ -7,20 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2312855E29CA2395004E08AA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2312855D29CA2395004E08AA /* MainView.swift */; };
+		2312855F29CA2395004E08AA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2312855D29CA2395004E08AA /* MainView.swift */; };
+		2312856229CA254F004E08AA /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2312856129CA254F004E08AA /* String+Extensions.swift */; };
+		2312856329CA254F004E08AA /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2312856129CA254F004E08AA /* String+Extensions.swift */; };
 		23F7A07029C3A56900E3DC52 /* iOS_ChatGPTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F7A06F29C3A56900E3DC52 /* iOS_ChatGPTApp.swift */; };
 		23F7A07229C3A56900E3DC52 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F7A07129C3A56900E3DC52 /* ContentView.swift */; };
 		23F7A07429C3A56E00E3DC52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23F7A07329C3A56E00E3DC52 /* Assets.xcassets */; };
 		23F7A07729C3A56E00E3DC52 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23F7A07629C3A56E00E3DC52 /* Preview Assets.xcassets */; };
-		23F7A08129C3A56F00E3DC52 /* iOS_ChatGPTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F7A08029C3A56F00E3DC52 /* iOS_ChatGPTTests.swift */; };
-		23F7A08B29C3A56F00E3DC52 /* iOS_ChatGPTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F7A08A29C3A56F00E3DC52 /* iOS_ChatGPTUITests.swift */; };
-		23F7A08D29C3A56F00E3DC52 /* iOS_ChatGPTUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F7A08C29C3A56F00E3DC52 /* iOS_ChatGPTUITestsLaunchTests.swift */; };
 		23F7A09E29C3A5E300E3DC52 /* macOS_ChatGPTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F7A09D29C3A5E300E3DC52 /* macOS_ChatGPTApp.swift */; };
 		23F7A0A029C3A5E300E3DC52 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F7A09F29C3A5E300E3DC52 /* ContentView.swift */; };
 		23F7A0A229C3A5E700E3DC52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23F7A0A129C3A5E700E3DC52 /* Assets.xcassets */; };
 		23F7A0A529C3A5E700E3DC52 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23F7A0A429C3A5E700E3DC52 /* Preview Assets.xcassets */; };
-		23F7A0B029C3A5E800E3DC52 /* macOS_ChatGPTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F7A0AF29C3A5E800E3DC52 /* macOS_ChatGPTTests.swift */; };
-		23F7A0BA29C3A5E900E3DC52 /* macOS_ChatGPTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F7A0B929C3A5E900E3DC52 /* macOS_ChatGPTUITests.swift */; };
-		23F7A0BC29C3A5E900E3DC52 /* macOS_ChatGPTUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F7A0BB29C3A5E900E3DC52 /* macOS_ChatGPTUITestsLaunchTests.swift */; };
 		23F7A0CE29C3A91100E3DC52 /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 23F7A0CD29C3A91100E3DC52 /* OpenAISwift */; };
 		23F7A0D029C3A91900E3DC52 /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 23F7A0CF29C3A91900E3DC52 /* OpenAISwift */; };
 /* End PBXBuildFile section */
@@ -57,16 +55,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2312855D29CA2395004E08AA /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		2312856129CA254F004E08AA /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		23F7A06C29C3A56900E3DC52 /* iOS-ChatGPT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-ChatGPT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23F7A06F29C3A56900E3DC52 /* iOS_ChatGPTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_ChatGPTApp.swift; sourceTree = "<group>"; };
 		23F7A07129C3A56900E3DC52 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		23F7A07329C3A56E00E3DC52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23F7A07629C3A56E00E3DC52 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		23F7A07C29C3A56F00E3DC52 /* iOS-ChatGPTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-ChatGPTTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		23F7A08029C3A56F00E3DC52 /* iOS_ChatGPTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_ChatGPTTests.swift; sourceTree = "<group>"; };
 		23F7A08629C3A56F00E3DC52 /* iOS-ChatGPTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-ChatGPTUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		23F7A08A29C3A56F00E3DC52 /* iOS_ChatGPTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_ChatGPTUITests.swift; sourceTree = "<group>"; };
-		23F7A08C29C3A56F00E3DC52 /* iOS_ChatGPTUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_ChatGPTUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		23F7A09B29C3A5E300E3DC52 /* macOS-ChatGPT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "macOS-ChatGPT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23F7A09D29C3A5E300E3DC52 /* macOS_ChatGPTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macOS_ChatGPTApp.swift; sourceTree = "<group>"; };
 		23F7A09F29C3A5E300E3DC52 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -74,10 +71,7 @@
 		23F7A0A429C3A5E700E3DC52 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		23F7A0A629C3A5E700E3DC52 /* macOS_ChatGPT.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS_ChatGPT.entitlements; sourceTree = "<group>"; };
 		23F7A0AB29C3A5E800E3DC52 /* macOS-ChatGPTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "macOS-ChatGPTTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		23F7A0AF29C3A5E800E3DC52 /* macOS_ChatGPTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macOS_ChatGPTTests.swift; sourceTree = "<group>"; };
 		23F7A0B529C3A5E800E3DC52 /* macOS-ChatGPTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "macOS-ChatGPTUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		23F7A0B929C3A5E900E3DC52 /* macOS_ChatGPTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macOS_ChatGPTUITests.swift; sourceTree = "<group>"; };
-		23F7A0BB29C3A5E900E3DC52 /* macOS_ChatGPTUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macOS_ChatGPTUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		23F7A0CB29C3A8DD00E3DC52 /* OpenAISwift-main */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "OpenAISwift-main"; path = "../OpenAISwift-main"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,17 +123,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2312856029CA2516004E08AA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2312856129CA254F004E08AA /* String+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		23F7A06129C39D4500E3DC52 = {
 			isa = PBXGroup;
 			children = (
 				23F7A0CA29C3A8DD00E3DC52 /* Packages */,
 				23F7A0C629C3A63200E3DC52 /* Shared */,
 				23F7A06E29C3A56900E3DC52 /* iOS-ChatGPT */,
-				23F7A07F29C3A56F00E3DC52 /* iOS-ChatGPTTests */,
-				23F7A08929C3A56F00E3DC52 /* iOS-ChatGPTUITests */,
 				23F7A09C29C3A5E300E3DC52 /* macOS-ChatGPT */,
-				23F7A0AE29C3A5E800E3DC52 /* macOS-ChatGPTTests */,
-				23F7A0B829C3A5E900E3DC52 /* macOS-ChatGPTUITests */,
 				23F7A06D29C3A56900E3DC52 /* Products */,
 				23F7A0CC29C3A91100E3DC52 /* Frameworks */,
 			);
@@ -177,23 +175,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		23F7A07F29C3A56F00E3DC52 /* iOS-ChatGPTTests */ = {
-			isa = PBXGroup;
-			children = (
-				23F7A08029C3A56F00E3DC52 /* iOS_ChatGPTTests.swift */,
-			);
-			path = "iOS-ChatGPTTests";
-			sourceTree = "<group>";
-		};
-		23F7A08929C3A56F00E3DC52 /* iOS-ChatGPTUITests */ = {
-			isa = PBXGroup;
-			children = (
-				23F7A08A29C3A56F00E3DC52 /* iOS_ChatGPTUITests.swift */,
-				23F7A08C29C3A56F00E3DC52 /* iOS_ChatGPTUITestsLaunchTests.swift */,
-			);
-			path = "iOS-ChatGPTUITests";
-			sourceTree = "<group>";
-		};
 		23F7A09C29C3A5E300E3DC52 /* macOS-ChatGPT */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,26 +195,11 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		23F7A0AE29C3A5E800E3DC52 /* macOS-ChatGPTTests */ = {
-			isa = PBXGroup;
-			children = (
-				23F7A0AF29C3A5E800E3DC52 /* macOS_ChatGPTTests.swift */,
-			);
-			path = "macOS-ChatGPTTests";
-			sourceTree = "<group>";
-		};
-		23F7A0B829C3A5E900E3DC52 /* macOS-ChatGPTUITests */ = {
-			isa = PBXGroup;
-			children = (
-				23F7A0B929C3A5E900E3DC52 /* macOS_ChatGPTUITests.swift */,
-				23F7A0BB29C3A5E900E3DC52 /* macOS_ChatGPTUITestsLaunchTests.swift */,
-			);
-			path = "macOS-ChatGPTUITests";
-			sourceTree = "<group>";
-		};
 		23F7A0C629C3A63200E3DC52 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				2312856029CA2516004E08AA /* Extensions */,
+				2312855D29CA2395004E08AA /* MainView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -479,7 +445,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2312856229CA254F004E08AA /* String+Extensions.swift in Sources */,
 				23F7A07229C3A56900E3DC52 /* ContentView.swift in Sources */,
+				2312855E29CA2395004E08AA /* MainView.swift in Sources */,
 				23F7A07029C3A56900E3DC52 /* iOS_ChatGPTApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,7 +456,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23F7A08129C3A56F00E3DC52 /* iOS_ChatGPTTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,8 +463,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23F7A08D29C3A56F00E3DC52 /* iOS_ChatGPTUITestsLaunchTests.swift in Sources */,
-				23F7A08B29C3A56F00E3DC52 /* iOS_ChatGPTUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,7 +470,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2312856329CA254F004E08AA /* String+Extensions.swift in Sources */,
 				23F7A0A029C3A5E300E3DC52 /* ContentView.swift in Sources */,
+				2312855F29CA2395004E08AA /* MainView.swift in Sources */,
 				23F7A09E29C3A5E300E3DC52 /* macOS_ChatGPTApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,7 +481,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23F7A0B029C3A5E800E3DC52 /* macOS_ChatGPTTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,8 +488,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23F7A0BC29C3A5E900E3DC52 /* macOS_ChatGPTUITestsLaunchTests.swift in Sources */,
-				23F7A0BA29C3A5E900E3DC52 /* macOS_ChatGPTUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

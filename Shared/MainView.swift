@@ -8,8 +8,20 @@
 import SwiftUI
 
 struct MainView: View {
+    @State private var charText: String = ""
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            Spacer()
+            HStack{
+                TextField("Search...", text: $charText).textFieldStyle(.roundedBorder)
+                Button{
+                    //action
+                } label: {
+                    Image(systemName: "paperplane.circle.fill").font(.title).rotationEffect(Angle(degrees: 45))
+                }.buttonStyle(.borderless).tint(.blue)
+            }
+        }.padding(10)
     }
 }
 
