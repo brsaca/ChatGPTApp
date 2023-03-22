@@ -8,8 +8,16 @@
 import SwiftUI
 
 struct HistoryView: View {
+    
+    @FetchRequest(sortDescriptors: [NSSortDescriptor(key: "dateCreated", ascending: true)])
+    private var historyItemResults: FetchedResults<HistoryItem>
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List(historyItemResults){ historyItem in
+            Text(historyItem.question ?? "")
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .contentShape(Rectangle())
+        }
     }
 }
 
