@@ -32,12 +32,12 @@ struct MainView: View {
                 do{
                     try model.saveQuery(query)
                 } catch {
-                    print(error.localizedDescription)
+                    print(">>>> Error Saving:: \(error.localizedDescription)")
                 }
                 
                 charText = ""
             case .failure(let failure):
-                print(failure)
+                print(">>>> Error openAI:: \(failure.localizedDescription)")
             }
         }
     }
