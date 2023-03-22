@@ -13,7 +13,7 @@ struct MainView: View {
     
     let openAI = OpenAISwift(authToken: "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")
     
-    @State private var answers: [String] = []
+    @EnvironmentObject private var model: Model
     
     private var isFormValid: Bool {
         !charText.isEmptyOrWhiteSpace
@@ -24,7 +24,18 @@ struct MainView: View {
             switch result {
             case .success(let success):
                 let answer = success.choices.first?.text.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
-                answers.append(answer)
+                let query = Query(question: charText, answer: answer)
+                DispatchQueue.main.async {
+                    model.queries.append(query)
+                }
+                
+                do{
+                    try model.saveQuery(query)
+                } catch {
+                    print(error.localizedDescription)
+                }
+                
+                charText = ""
             case .failure(let failure):
                 print(failure)
             }
@@ -33,8 +44,11 @@ struct MainView: View {
     
     var body: some View {
         VStack{
-            List(answers, id: \.self) { answer in
-                Text(answer)
+            List(model.queries) { query in
+                VStack {
+                    Text(query.question).fontWeight(.bold)
+                    Text(query.answer)
+                }
             }
             Spacer()
             HStack{
