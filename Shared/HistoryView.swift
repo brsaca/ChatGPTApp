@@ -21,7 +21,9 @@ struct HistoryView: View {
                 .contentShape(Rectangle())
                 .onTapGesture {
                     model.query = Query(question: historyItem.question ?? "", answer: historyItem.answer ?? "")
-                    dismiss()
+                    #if os(iOS)
+                        dismiss()
+                    #endif
                 }
         }
     }
