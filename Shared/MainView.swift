@@ -15,11 +15,14 @@ struct MainView: View {
     
     @EnvironmentObject private var model: Model
     
+    @State private var isSearching: Bool = false
+    
     private var isFormValid: Bool {
         !charText.isEmptyOrWhiteSpace
     }
     
     private func performSearch() {
+        isSearching = true
         openAI.sendCompletion(with: charText, maxTokens: 500) { result in
             switch result {
             case .success(let success):
@@ -36,8 +39,10 @@ struct MainView: View {
                 }
                 
                 charText = ""
+                isSearching = false
             case .failure(let failure):
                 print(">>>> Error openAI:: \(failure.localizedDescription)")
+                isSearching = false
             }
         }
     }
@@ -78,6 +83,11 @@ struct MainView: View {
         }.padding(10)
             .onChange(of: model.query) { query in
                 model.queries.append(query)
+            }
+            .overlay(alignment: .center) {
+                if isSearching {
+                    ProgressView("Searching...")
+                }
             }
     }
 }
