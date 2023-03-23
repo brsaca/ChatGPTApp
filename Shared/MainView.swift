@@ -11,7 +11,7 @@ import OpenAISwift
 struct MainView: View {
     @State private var charText: String = ""
     
-    let openAI = OpenAISwift(authToken: "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")
+    let openAI = OpenAISwift(authToken: UserDefaults.standard.string(forKey: "openAIKey") ?? "")
     
     @EnvironmentObject private var model: Model
     
